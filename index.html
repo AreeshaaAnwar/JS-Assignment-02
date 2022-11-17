@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="top">
+                <input type="text" id="value" onchange="change()">
+                <i class="fa-sharp fa-solid fa-magnifying-glass" style="position: relative; margin-top: 5px; margin-left: 140px;" ></i>
+                
+                <button style="margin-left: 40px; font-size: larger;" id="search" onclick="sea()">search</button>
+               
+            </div>
+        
+            <!-- <button style="margin-left: 200px; margin-top: 25px; " id="search" onclick="sea()">search</button> -->
+            <div class="right">
+                <i  style="color: black; " class="fa-sharp fa-solid fa-user"> Areesha</i>
+            </div>
+        
+        
+        
+        </nav>
+        <main id="main">
+            <div id="myModal" class="modal">
+
+  
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <img src="" id="img" class="images">
+                  <h1 id="heading"></h1>
+                  <!-- <audio id="audio" src="" ></audio> -->
+                  <div class="buttons">
+                    <div class="prev-track" >
+                      <i class="fa fa-step-backward fa-2x"></i>
+                    </div>
+                    <div class="playpause-track" onclick="playpauseTrack()">
+                      <i class="fa fa-play-circle fa-5x"></i>
+                    </div>
+                    <div class="next-track">
+                      <i class="fa fa-step-forward fa-2x"></i>
+                    </div>
+                  </div>
+               
+                  <!-- Define the section for displaying the seek slider-->
+                  <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                    <input type="range" 
+                      value="0" class="seek_slider" onchange="seekTo()">
+                    <div class="total-duration">00:00</div>
+                  </div>
+               
+                </div>
+              
+              </div>
+             
+        </main>
+        <div class="side-bar">
+           <div class="logo">
+           <img src="Images/spotify-logo.png">
+           <h5 style="  color: white;margin-left: 20px; font-size: xx-large; font-family: Arial, Helvetica, sans-serif;">SPOTIFY</h5>
+           </div>
+        
+           <div class="icons">
+            <i class="fa-sharp fa-solid fa-house-chimney" style="font-size: 30px;"></i>
+            <a href="#" style=" padding: 10px; text-decoration: none;  color: white;">home</a>
+            
+           </div>
+           <div class="liked">
+            <i class="fa-sharp fa-solid fa-heart" style="font-size: 30px;"></i>
+            <a href="#" style="padding: 10px; text-decoration: none;  color: white;">Liked Songs</a>
+        </div>
+        </div>
+            </div>
+            <script src="JavaScript.js"></script>
+</body>
+</html>
