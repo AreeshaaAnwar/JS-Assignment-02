@@ -43,6 +43,7 @@ function sea(){
     let c=localStorage.getItem('search')
     console.log(c)
     getTrackData(c)
+    map()
   }
 function getTrackData(query) {
     Token1=localStorage.getItem('Token')
@@ -74,7 +75,7 @@ const div=document.createElement('div')
 div.className='cards'
 
 
-
+function map(){
 items.tracks.items.map((data,index)=>{
  
   let output=` 
@@ -88,7 +89,7 @@ items.tracks.items.map((data,index)=>{
      div.innerHTML+=output
       main.appendChild(div)
   
-  })
+  })}
   console.log(div)
 
 
